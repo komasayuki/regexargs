@@ -3,11 +3,14 @@
 CLI for executing commands from standard input for regex user
 
 
-## Build
+## Install for Mac
 
 ```
-$ cargo build
+$ brew tap komasayuki/regexargs
+$ brew install regexargs
 ```
+
+
 
 ## Usage
 
@@ -22,7 +25,6 @@ usage: regexargs RegularExpression ExecuteCommand
 - {x}: x nd group in regular expression
 
 
-
 ## Example
 
 Changing the file extension of files in the folder
@@ -32,4 +34,16 @@ $ ls -1 | regexargs "(.*)\.(.*)" mv {0} {1}.csv
 ```
 
 
+## Build
 
+```
+$ cargo build
+```
+
+
+
+## Test
+
+```
+$ cargo test
+```
